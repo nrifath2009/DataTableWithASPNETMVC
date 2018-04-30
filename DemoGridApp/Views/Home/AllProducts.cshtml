@@ -58,9 +58,7 @@
                         ],
                         "columnDefs": [
                             {
-                                // The `data` parameter refers to the data for the cell (defined by the
-                                // `data` option, which defaults to the column being worked with, in
-                                // this case `data: 0`.
+                                
                                 "render": function (data, type, row) {
                                     console.log(data);
                                     return '<td><input type="text" class="form-control" id="row_' + row + '" name="row_' + row + '" value="'+data+'"></td>';
@@ -70,23 +68,7 @@
                             },
                             { "visible": true,  "targets": [1] }
                         ],
-                        //"initComplete": function () {
-                        //    var searchBox = $("#example_wrapper").find("input[type='search']");
-                        //    var searchBoxHolder = searchBox.parent();
-                        //    searchBox.empty().remove();
-                        //    searchBoxHolder.append($("<input/>", {
-                        //        "type": "text"
-                        //    }).typeahead({
-                        //        source: words,
-                        //        afterSelect: function (word) {
-                        //            table.search(word).draw();
-                        //        }
-                        //    }).on("keyup", function (x) {
-                        //        if (words.indexOf($(x.target).val()) === -1) {
-                        //            table.search($(x.target).val()).draw();
-                        //        }
-                        //    }));
-                        //},
+                        
                         "pagingType": "full_numbers"
                     });
                 },
